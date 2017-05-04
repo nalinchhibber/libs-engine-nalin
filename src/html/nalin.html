@@ -1,14 +1,14 @@
 
 <!-- Engine Renderer Template -->
 
-<div class="activity-body mcq-body" id="mcq-engine"> 
+<div class="activity-body nalin-body" id="nalin-engine"> 
    <div class="row" rv-each-interact="content.interactions | propertyList">   
       <div class="col-sm-12">      
          <div class="form">      
  <!-- Paint the instructions or question text -->    
             <div rv-text="content.canvas.data.questiondata | appendInteraction %interact%"></div>     
 			<!-- Paint the options -->
-            <img rv-src="content.stimulus.mediaContent" class="col-sm-6 mcq-img" rv-show="isMCQImageEngine"></img>
+            <img rv-src="content.stimulus.mediaContent" class="col-sm-6 nalin-img" rv-show="isNALINImageEngine"></img>
             <ul class="list-unstyled nested-list col-sm-6">        
                <li rv-each-element="content.interactions | getArray interact.key">
                   <label class="radio radio-lg">

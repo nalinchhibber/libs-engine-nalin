@@ -1,6 +1,6 @@
 {
   "meta": {
-    "type": "MCQ",
+    "type": "NALIN",
     "score": {
       "default": 0,
       "max": 1,
@@ -19,11 +19,11 @@
       }
     ],
     "canvas": {
-      "layout": "MCQ",
+      "layout": "NALIN",
       "data": {
         "questiondata": [
           {
-            "text": "   What's the matter with this patient? <a href='http://www.comprodls.com/m1.0/interaction/mcq'>i1</a> "
+            "text": "   What's the matter with this patient? <a href='http://www.comprodls.com/m1.0/interaction/nalin'>i1</a> "
           }
         ]
       },
@@ -31,8 +31,8 @@
     },     
     "interactions": {
       "i1": {
-        "type": "MCQ",
-        "MCQ": [
+        "type": "NALIN",
+        "NALIN": [
           {
             "choiceA": "She has the flu." 
           },

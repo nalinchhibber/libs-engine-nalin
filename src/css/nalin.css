@@ -7,36 +7,36 @@
  * These styles do not include any product-specific branding
  * and/or layout / design. They represent minimal structural
  * CSS which is necessary for a default rendering of an
- * MCQSC activity
+ * nalinSC activity
  *
  * The styles are linked/depending on the presence of
  * certain elements (classes / ids / tags) in the DOM (as would
- * be injected via a valid MCQSC layout HTML and/or dynamically
- * created by the MCQSC engine JS)
+ * be injected via a valid nalinSC layout HTML and/or dynamically
+ * created by the nalinSC engine JS)
  *
  *
  *******************************************************/
 
-.mcq-body .form *{
+.nalin-body .form *{
     margin: 0;
     padding: 0;
 }
 
-.mcq-body .form .mcq-img{
+.nalin-body .form .nalin-img{
     padding-top: 10px;
 }
 
-.mcq-body .form ul li{
+.nalin-body .form ul li{
     padding: .7em .4em .7em 1.8em;
     position: relative;
 }
 
-.mcq-body .form ul li.highlight{
+.nalin-body .form ul li.highlight{
     background-color: #F2F2F2;
     border-radius: 6px;
 }
 
-.mcq-body .form ul li i{
+.nalin-body .form ul li i{
     height: 1.8em;
     width: 1.8em;
     border-radius: 50%;
@@ -49,7 +49,7 @@
     background: #FFF;
 }
 
-.mcq-body .form ul li i:after {
+.nalin-body .form ul li i:after {
     background-color: #3276B1;
     content: '';
     border-radius: 50%;
@@ -61,15 +61,15 @@
     opacity: 0;
 }
 
-.mcq-body .form ul li.highlight i{
+.nalin-body .form ul li.highlight i{
     border-color: #3276B1;
 }
 
-.mcq-body .form ul li.highlight i:after{
+.nalin-body .form ul li.highlight i:after{
     opacity: 1;
 }
 
-.mcq-body .form ul li .radio{
+.nalin-body .form ul li .radio{
     line-height: 1.8em;
     font-weight: normal;
     cursor: pointer;
@@ -77,58 +77,58 @@
 }
 
 
-.mcq-body .form ul li .radio input {
+.nalin-body .form ul li .radio input {
     position: absolute;
     left: -9999px;
 }
 
-.mcq-body .form ul li .radio.state-error i{
+.nalin-body .form ul li .radio.state-error i{
     background: #fff0f0;
     border-color: #a90329;
 }
 
-.mcq-body .form ul li .radio.state-error i:after {
+.nalin-body .form ul li .radio.state-error i:after {
     background-color: #a90329;
 }
 
-.mcq-body .form ul li .radio.state-success i{
+.nalin-body .form ul li .radio.state-success i{
     background: #f0fff0;
     border-color: #7DC27D;
 }
 
-.mcq-body .form ul li .radio.state-success i:after {
+.nalin-body .form ul li .radio.state-success i:after {
     background-color: #7DC27D;
 }
 
-.mcq-body span.correct:before {
+.nalin-body span.correct:before {
     content: "\f00c";
     font-family: fontawesome;
     display: inline-block;
     margin: 0 3.5em auto -3.2em;
 }
 
-.mcq-body span.wrong:before {
+.nalin-body span.wrong:before {
     content: "\f00d";
     font-family: fontawesome;
     display: inline-block;
     margin: 0 3.6em auto -3.2em;
 }
 
-.mcq-body .answer{
+.nalin-body .answer{
     margin-left: 20px;
 }
 
-.mcq-body span.correct, .mcq-body span.wrong{
+.nalin-body span.correct, .nalin-body span.wrong{
     margin-left: 0;
 }
 
-.mcq-body .col-md-6.last-child {
+.nalin-body .col-md-6.last-child {
     min-height: 200px;
     border-left: 1px solid #C2C2C2;
     padding-left: 20px;
 }
 
-.mcq-body .stimulus {
+.nalin-body .stimulus {
     margin: 25px 0 25px 0;
 }
 #feedback-area {
@@ -145,7 +145,7 @@
     font-weight: 700;
 }
 /* CORRECT ANSWER icon/mark */
-.mcq-body #feedback-area span.correct:before {
+.nalin-body #feedback-area span.correct:before {
     content: "\f00c";
     font-family: fontawesome;
     display: inline-block;
@@ -158,7 +158,7 @@
     border-radius: 16px;
     margin: 10px;
 }
-.mcq-body #feedback-area span.wrong:before {
+.nalin-body #feedback-area span.wrong:before {
     content: "\f00d";
     font-family: fontawesome;
     display: inline-block;
