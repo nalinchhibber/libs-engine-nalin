@@ -50,7 +50,7 @@ module.exports = function(grunt) {
                         'rivets': bower_components+ 'rivets/dist/rivets',
                         'sightglass': bower_components + 'sightglass/index'
                     },
-                    optimize: 'uglify2',
+                    optimize: 'none',
                     uglify2: {
                         mangle: false
                     },
