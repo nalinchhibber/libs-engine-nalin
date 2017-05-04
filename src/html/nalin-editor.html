@@ -1,7 +1,7 @@
 
 <!-- Engine Editor Template -->
 
-<div class="activity-body mcq-body" id="mcq-editor"> 
+<div class="activity-body nalin-body" id="nalin-editor"> 
    <div class="row">
       <div class="col-sm-12 well edit-procedure">
          <div>
@@ -60,19 +60,19 @@
          </div>
          <div class="col-sm-12 form questions-editor">
             <ul class="list-unstyled nested-list editor sortable">
-               <!-- Loop over all options inside interaction  (MCQ Array)-->  
-               <li class="col-xs-10 mcq-item" rv-each-element="interact.MCQ" rv-class-highlight="element.customAttribs.isCorrect" rv-elementIndex="element.customAttribs.index" rv-interactIndex="%interact%">
+               <!-- Loop over all options inside interaction  (NALIN Array)-->  
+               <li class="col-xs-10 nalin-item" rv-each-element="interact.NALIN" rv-class-highlight="element.customAttribs.isCorrect" rv-elementIndex="element.customAttribs.index" rv-interactIndex="%interact%">
                   <label class="radio radio-lg">
                      <span class="invisible wrong pull-left"></span>
-                     <input type="radio" name="optionsRadios" class="option mcq-option" rv-key="element.customAttribs.key" rv-value="element.customAttribs.value" rv-checked="element.customAttribs.isCorrect"></input>
+                     <input type="radio" name="optionsRadios" class="option nalin-option" rv-key="element.customAttribs.key" rv-value="element.customAttribs.value" rv-checked="element.customAttribs.isCorrect"></input>
                      <i></i>
                      <input class="option-value input-option" rv-show="element.customAttribs.isEdited" rv-value="element.customAttribs.value" rv-on-blur="removeEditing | args element"></input>
                      <div class="option-value" rv-hide="element.customAttribs.isEdited" rv-text="element.customAttribs.value"></div>
                      <span class="correct-answer pull-right" rv-show="element.customAttribs.isCorrect">Correct Answer</span>
                   </label>
-                  <a class="editor-icon mcq-edit fa fa-pencil pull-right" rv-on-click="toggleEditing | args element"></a>
-                  <a class="editor-icon delete-icon mcq-edit fa fa-trash-o pull-right" rv-on-click="removeItem | args element %interact%"></a>
-                  <a class="editor-icon drag-icon mcq-edit fa fa-bars pull-right"></a>
+                  <a class="editor-icon nalin-edit fa fa-pencil pull-right" rv-on-click="toggleEditing | args element"></a>
+                  <a class="editor-icon delete-icon nalin-edit fa fa-trash-o pull-right" rv-on-click="removeItem | args element %interact%"></a>
+                  <a class="editor-icon drag-icon nalin-edit fa fa-bars pull-right"></a>
                </li>           
             </ul>
         </div>
