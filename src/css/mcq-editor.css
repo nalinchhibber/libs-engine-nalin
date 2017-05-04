@@ -1,0 +1,164 @@
+/*******************************************************
+ * 
+ * ----------------------
+ * Engine Editor Styles
+ * ----------------------
+ *
+ * These styles do not include any product-specific branding
+ * and/or layout / design. They represent minimal structural
+ * CSS which is necessary for a default rendering of an
+ * MCQSC activity
+ *
+ * The styles are linked/depending on the presence of
+ * certain elements (classes / ids / tags) in the DOM (as would
+ * be injected via a valid MCQSC layout HTML and/or dynamically
+ * created by the MCQSC engine JS)
+ *
+ *
+ *******************************************************/
+#mcq-editor .edit-procedure{
+    padding-bottom: 0;
+}
+
+#mcq-editor .edit-procedure li{
+    padding: 5px;
+}
+
+#mcq-editor .ques-text-editor.editor-icon{
+	position: absolute;
+	right: 115px;
+    cursor: pointer;
+}
+
+#mcq-editor .question-text-viewer{
+	font-weight: 700;
+	font-size: 18px;
+}
+
+#mcq-editor .question-text-editor{
+	font-weight: 700;
+	font-size: 18px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#mcq-editor .questions-editor.form{
+	padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#mcq-editor .form *{
+    margin: 0;
+    padding: 0;
+}
+
+#mcq-editor .form ul li{
+    padding: 10px;
+    position: relative;
+}
+
+#mcq-editor .form ul li.highlight{
+    background-color: #F2F2F2;
+    border-radius: 6px;
+}
+
+#mcq-editor .form ul li i{
+    height: 1.8em;
+    width: 1.8em;
+    border-radius: 50%;
+    position: absolute;
+	top: 0;
+    left: 0;
+    display: block;
+    outline: 0;
+    border: 1px solid #BDBDBD;
+    background: #FFF;
+}
+
+#mcq-editor .form ul li i:after {
+    background-color: #3276B1;
+    content: '';
+    border-radius: 50%;
+    height: 1.1em;
+    width: 1.1em;
+    top: .3em;
+    left: .3em;
+    position: absolute;
+    opacity: 0;
+}
+
+#mcq-editor .form ul li.highlight i{
+    border-color: #3276B1;
+}
+
+#mcq-editor .form ul li.highlight i:after{
+    opacity: 1;
+}
+
+#mcq-editor .form ul li .radio{
+    font-size: 1em;
+    line-height: 1.8em;
+    color: #3D3D3D;
+    cursor: pointer;
+    padding-left: 45px!important;
+}
+
+
+#mcq-editor .form ul li .radio input {
+    position: absolute;
+    left: -9999px;
+}
+
+#mcq-editor .form ul li .radio .option-value{
+	position: static!important;
+}
+
+#mcq-editor .form ul li .radio div.option-value{
+	display: inline-block;
+}
+
+#mcq-editor .form ul li .radio .correct-answer{
+    font-weight: 700;
+}
+
+#mcq-editor .form ul li .editor-icon {
+	cursor: pointer;
+}
+
+#mcq-editor .form ul li .editor-icon.mcq-edit{
+	position: absolute;
+	right: -50px;
+	top: 10px;
+}
+
+#mcq-editor .form ul li .delete-icon.mcq-edit{
+	right: -90px;
+}
+
+#mcq-editor .form ul li .drag-icon.mcq-edit{
+	right: -70px;
+}
+
+#mcq-editor .add-container .add-item{
+	cursor: pointer;
+}
+
+#mcq-editor .input-option{
+	width: 90%;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+#mcq-editor .bottom-content .rule{
+	padding-bottom: 10px;	
+}
+
+#mcq-editor .bottom-content .objective{
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 10px;
+}
+
+#mcq-editor .bottom-content .feedback-text{
+	display: block;
+	padding: 10px 0;
+}

@@ -1,0 +1,104 @@
+
+<!-- Engine Editor Template -->
+
+<div class="activity-body mcq-body" id="mcq-editor"> 
+   <div class="row">
+      <div class="col-sm-12 well edit-procedure">
+         <div>
+          Use the editor below to author/update Multiple Choice, Single Select question. Typical sequence of authoring and options include the following:
+          </div>
+          <ul>
+            <li>
+              <div>Add <strong>Instructions</strong> [mandatory]</div>
+              <div>
+                This should include the question text to be presented to the student and additional context as necessary.
+              </div>
+            </li>
+            <li>
+              <div>Define <strong>Choices</strong> [mandatory]</div>
+              <div>
+                Choices to be presented to the student a options (possible answers). Use add/edit/remove/reorder options to appropriate setup choices.
+              </div>
+            </li>
+            <li>
+              <div>Mark <strong>Correct Answer</strong> [mandatory]</div>
+              <div>
+                Simply mark the correct answer by selecting the corresponding radio button (for a choice).
+              </div>
+            </li>
+            <li>
+              <div>Indicated <strong>Score or Points</strong> [optional]</div>
+              <div>
+                This 1.0 by default. Change this if you’d like increase the weightage for this question when it's used as part of a larger test (multiple questions).
+              </div>
+            </li>
+            <li>
+              <div>Specify <strong>Stimulus</strong> [optional]</div>
+              <div>
+                You can provide an optional image, audio, passage or video stimulus.
+              </div>
+            </li>
+            <li>
+              <div>Specify <strong>Feedback</strong> [optional]</div>
+              <div>
+                Optional instructor feedback may be shown to the user after the answer is submitted (correct or incorrect) or when user request help/hints.
+              </div>
+            </li>
+          </ul>
+      </div>
+   </div>
+  <!-- Loop over all interactions -->
+	<div class="row" rv-each-interact="content.interactions">   
+      <div class="col-sm-12 main-container">      
+         <div class="col-sm-12 form">     
+           <!-- Loop over all questiondata inside interaction -->  
+            <div rv-each-questiondata="content.canvas.data.questiondata | appendindex %interact%">
+            	 <input class="question-text-editor col-xs-10" rv-show="quesEdited.isEditing" rv-value="questiondata.text" rv-on-blur="removeEditing | args quesEdited"></input>
+               <div class="question-text-viewer col-xs-10" rv-hide="quesEdited.isEditing" rv-text="questiondata.text"></div>
+               <a class="editor-icon fa fa-pencil pull-right ques-text-editor" rv-on-click="toggleQuestionTextEditing | args quesEdited"></a>
+            </div>
+         </div>
+         <div class="col-sm-12 form questions-editor">
+            <ul class="list-unstyled nested-list editor sortable">
+               <!-- Loop over all options inside interaction  (MCQ Array)-->  
+               <li class="col-xs-10 mcq-item" rv-each-element="interact.MCQ" rv-class-highlight="element.customAttribs.isCorrect" rv-elementIndex="element.customAttribs.index" rv-interactIndex="%interact%">
+                  <label class="radio radio-lg">
+                     <span class="invisible wrong pull-left"></span>
+                     <input type="radio" name="optionsRadios" class="option mcq-option" rv-key="element.customAttribs.key" rv-value="element.customAttribs.value" rv-checked="element.customAttribs.isCorrect"></input>
+                     <i></i>
+                     <input class="option-value input-option" rv-show="element.customAttribs.isEdited" rv-value="element.customAttribs.value" rv-on-blur="removeEditing | args element"></input>
+                     <div class="option-value" rv-hide="element.customAttribs.isEdited" rv-text="element.customAttribs.value"></div>
+                     <span class="correct-answer pull-right" rv-show="element.customAttribs.isCorrect">Correct Answer</span>
+                  </label>
+                  <a class="editor-icon mcq-edit fa fa-pencil pull-right" rv-on-click="toggleEditing | args element"></a>
+                  <a class="editor-icon delete-icon mcq-edit fa fa-trash-o pull-right" rv-on-click="removeItem | args element %interact%"></a>
+                  <a class="editor-icon drag-icon mcq-edit fa fa-bars pull-right"></a>
+               </li>           
+            </ul>
+        </div>
+        <div class="col xs-12 add-container">
+            <a class="add-item" rv-on-click="addItem | args content %interact%"><u>Add new option</u></a>
+        </div>
+      </div>
+    </div>
+    <div class="row bottom-content">
+      <div class="col-sm-12">
+         <h3>Feedback (1)</h3>
+         <div class="rule">Rule: ALWAYS</div>
+         <div class="objective">
+            <div>
+               Objective: Identify the basic structures of the facial bones paranasal sinuses.
+            </div>
+            <div>
+               Textbook Reference: p. 393
+         </div>
+         <div>
+            
+         </div>
+      </div>
+      <div>
+        <a class="feedback-text"><u>Add Feedback {text} when answer is correct</u></a>
+        <a class="feedback-text"><u>Add Feedback {text} when answer is wrong</u></a>
+      </div>
+    </div>
+</div>

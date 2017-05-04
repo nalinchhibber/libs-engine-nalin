@@ -1,0 +1,15 @@
+{
+  "name": "libs-frontend-engine-mcq",
+  "version": "0.0.1",
+  "description": "Compro MCQ Activity engine",
+  "devDependencies": {
+    "handlebars": "1.0.0",
+    "jquery": "2.1.1",
+    "requirejs": "*",
+    "rivets": "0.9.6",
+    "jquery-ui": "1.12.1",
+    "less": "2.3.0",
+    "text": "2.0.7",
+    "require-css": "0.1.8"
+  }
+}

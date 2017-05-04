@@ -1,0 +1,173 @@
+/*******************************************************
+ * 
+ * ----------------------
+ * Engine Renderer Styles
+ * ----------------------
+ *
+ * These styles do not include any product-specific branding
+ * and/or layout / design. They represent minimal structural
+ * CSS which is necessary for a default rendering of an
+ * MCQSC activity
+ *
+ * The styles are linked/depending on the presence of
+ * certain elements (classes / ids / tags) in the DOM (as would
+ * be injected via a valid MCQSC layout HTML and/or dynamically
+ * created by the MCQSC engine JS)
+ *
+ *
+ *******************************************************/
+
+.mcq-body .form *{
+    margin: 0;
+    padding: 0;
+}
+
+.mcq-body .form .mcq-img{
+    padding-top: 10px;
+}
+
+.mcq-body .form ul li{
+    padding: .7em .4em .7em 1.8em;
+    position: relative;
+}
+
+.mcq-body .form ul li.highlight{
+    background-color: #F2F2F2;
+    border-radius: 6px;
+}
+
+.mcq-body .form ul li i{
+    height: 1.8em;
+    width: 1.8em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    outline: 0;
+    border: 1px solid #BDBDBD;
+    background: #FFF;
+}
+
+.mcq-body .form ul li i:after {
+    background-color: #3276B1;
+    content: '';
+    border-radius: 50%;
+    height: 1.1em;
+    width: 1.1em;
+    top: .3em;
+    left: .3em;
+    position: absolute;
+    opacity: 0;
+}
+
+.mcq-body .form ul li.highlight i{
+    border-color: #3276B1;
+}
+
+.mcq-body .form ul li.highlight i:after{
+    opacity: 1;
+}
+
+.mcq-body .form ul li .radio{
+    line-height: 1.8em;
+    font-weight: normal;
+    cursor: pointer;
+    padding-left: 25px;
+}
+
+
+.mcq-body .form ul li .radio input {
+    position: absolute;
+    left: -9999px;
+}
+
+.mcq-body .form ul li .radio.state-error i{
+    background: #fff0f0;
+    border-color: #a90329;
+}
+
+.mcq-body .form ul li .radio.state-error i:after {
+    background-color: #a90329;
+}
+
+.mcq-body .form ul li .radio.state-success i{
+    background: #f0fff0;
+    border-color: #7DC27D;
+}
+
+.mcq-body .form ul li .radio.state-success i:after {
+    background-color: #7DC27D;
+}
+
+.mcq-body span.correct:before {
+    content: "\f00c";
+    font-family: fontawesome;
+    display: inline-block;
+    margin: 0 3.5em auto -3.2em;
+}
+
+.mcq-body span.wrong:before {
+    content: "\f00d";
+    font-family: fontawesome;
+    display: inline-block;
+    margin: 0 3.6em auto -3.2em;
+}
+
+.mcq-body .answer{
+    margin-left: 20px;
+}
+
+.mcq-body span.correct, .mcq-body span.wrong{
+    margin-left: 0;
+}
+
+.mcq-body .col-md-6.last-child {
+    min-height: 200px;
+    border-left: 1px solid #C2C2C2;
+    padding-left: 20px;
+}
+
+.mcq-body .stimulus {
+    margin: 25px 0 25px 0;
+}
+#feedback-area {
+    margin-top: 18px;   
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    background-color: #eee;
+    color: #3D3D3D;
+}
+#feedback-area > h4 {
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+/* CORRECT ANSWER icon/mark */
+.mcq-body #feedback-area span.correct:before {
+    content: "\f00c";
+    font-family: fontawesome;
+    display: inline-block;
+    margin-right: 10px;
+    color: #009900;
+    float: left;
+    font-size: 18px;
+    border: 2px solid #009900;
+    padding: 3px 5px 3px 5px;
+    border-radius: 16px;
+    margin: 10px;
+}
+.mcq-body #feedback-area span.wrong:before {
+    content: "\f00d";
+    font-family: fontawesome;
+    display: inline-block;
+    margin-right: 10px;
+    color: red;
+    float: left;
+    font-size: 18px;
+    border: 2px solid red;
+    padding: 2px 6px 2px 6px;
+    border-radius: 16px;
+    margin: 10px;
+}

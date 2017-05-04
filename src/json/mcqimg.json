@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "type": "MCQ",
+    "score": {
+      "default": 0,
+      "max": 1,
+      "min": 0
+    }
+  },
+  "content": {
+    "instructions": [
+      {
+        "tag": "html",
+        "html": "Click the correct answer for each question. Click <b>Submit</b> to check your answers."
+      } 
+    ],
+    "stimulus": [
+      {
+        "tag": "image",
+        "image": "assets/mcq_img.jpg"
+      }
+    ],
+    "canvas": {
+      "layout": "MCQ_IMAGE",
+      "data": {
+        "questiondata": [
+          {
+            "text": " Hi. My name __ Paul. <a href='http://www.comprodls.com/m1.0/interaction/mcq'>i1</a> "
+          }
+        ]
+      },
+      "raw": ""
+    },     
+    "interactions": {
+      "i1": {
+        "type": "MCQ",
+        "MCQ": [
+          {
+            "choiceA": "am" 
+          },
+          {
+            "choiceB": "call"
+          },
+          {
+            "choiceC": "is"
+          },
+          {
+            "choiceD": "calls"
+          }          
+        ]
+      }
+    },
+    "hint": {}
+  },
+  "feedback": {
+    "global": {
+      "correct": "",
+      "incorrect": "",
+      "empty": ""
+    }
+  },
+  "responses": {
+    "i1": {
+      "correct": "choiceC"
+    }
+  },
+  "learning-objectives": [],
+  "tags": [
+    "test"
+  ]
+}
